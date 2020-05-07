@@ -24,10 +24,13 @@ class Home extends Component {
 
   getBooks = () => {
     API.getBooks(this.state.q)
-      .then(res =>
+      .then(res =>{
+        console.log(res)
         this.setState({
           books: res.data
         })
+      }
+        
       )
       .catch(() =>
         this.setState({
@@ -65,7 +68,7 @@ class Home extends Component {
               <h1 className="text-center">
                 <strong>(React) Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center">Search for and Save Books you like.</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
