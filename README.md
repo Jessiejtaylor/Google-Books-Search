@@ -1,6 +1,7 @@
 # Google-Books-Search
 
-<b>Deployed on Heroku:</b>
+<b>Deployed on Heroku:</b> 
+https://books-app-search.herokuapp.com/
 
 A React-based Google Books Search app. Users can search for books by title or author and save books to review later. 
 
